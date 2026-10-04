@@ -13,8 +13,8 @@ if (Number.isNaN(port) || port <= 0) {
 
 const basePath =
   process.env.GITHUB_PAGES === 'true'
-    ? '/rozzvh/'
-    : (process.env.BASE_PATH ?? '/rozzvh/');
+    ? '/rozzzzvr/'
+    : (process.env.BASE_PATH ?? '/rozzzzvr/');
 
 export default defineConfig({
   base: basePath,
@@ -50,7 +50,7 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname),
   build: {
-    outDir: path.resolve(import.meta.dirname, 'dist/public'),
+    outDir: path.resolve(import.meta.dirname, 'dist'),
     emptyOutDir: true,
   },
   server: {
